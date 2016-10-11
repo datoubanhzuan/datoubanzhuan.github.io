@@ -43,7 +43,7 @@
 		</hgroup>
 
 		
-		<p class="header-subtitle">码农，hehe！！</p>
+		<p class="header-subtitle">Follow The Master!!</p>
 		
 
 		<nav class="header-menu">
@@ -104,7 +104,7 @@
 			  <h1 class="header-author">大头板砖</h1>
 			</hgroup>
 			
-			<p class="header-subtitle">码农，hehe！！</p>
+			<p class="header-subtitle">Follow The Master!!</p>
 			
 			<nav class="header-menu">
 				<ul>
@@ -129,7 +129,7 @@
       <div class="body-wrap">
         
   
-    <article id="post-test-1" class="article article-type-post" itemscope itemprop="blogPost">
+    <article id="C-pre-ANSI" class="article article-type-C" itemscope itemprop="blogPost">
   <div class="article-inner">
     
       <input type="hidden" class="isFancy" />
@@ -139,7 +139,7 @@
         
   
     <h1 itemprop="name">
-      <a class="article-title" href="/2016/09/28/test-1/">test_1</a>
+      <a class="article-title" href="/2016/10/11/pre-ANSI/">PROTOTYPES and pre-ANSI</a>
     </h1>
   
 
@@ -147,112 +147,32 @@
     
     <div class="article-entry" itemprop="articleBody">
       
-        
-      
-    </div>
-    <div class="article-info article-info-index">
-      
-      <a href="/2016/09/28/test-1/" class="archive-article-date">
-  	<time datetime="2016-09-27T17:38:03.000Z" itemprop="datePublished"><i class="icon-clock"></i>2016-09-28</time>
-</a>
-      
-      
-
-      <div class="clearfix"></div>
-    </div>
-  </div>
-</article>
-
-
-
-
-
-
-
-
-
-
-  
-    <article id="post-hello-world" class="article article-type-post" itemscope itemprop="blogPost">
-  <div class="article-inner">
-    
-      <input type="hidden" class="isFancy" />
-    
-    
-      <header class="article-header">
-        
-  
-    <h1 itemprop="name">
-      <a class="article-title" href="/2016/09/27/hello-world/">Hello World</a>
-    </h1>
-  
-
-      </header>
-    
-    <div class="article-entry" itemprop="articleBody">
-      
-        <p>Welcome to <a href="https://hexo.io/" target="_blank" rel="external">Hexo</a>! This is your very first post. Check <a href="https://hexo.io/docs/" target="_blank" rel="external">documentation</a> for more info. If you get any problems when using Hexo, you can find the answer in <a href="https://hexo.io/docs/troubleshooting.html" target="_blank" rel="external">troubleshooting</a> or you can ask me on <a href="https://github.com/hexojs/hexo/issues" target="_blank" rel="external">GitHub</a>.</p>
-<h2 id="Quick-Start"><a href="#Quick-Start" class="headerlink" title="Quick Start"></a>Quick Start</h2><h3 id="Create-a-new-post"><a href="#Create-a-new-post" class="headerlink" title="Create a new post"></a>Create a new post</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">$ hexo new <span class="string">"My New Post"</span></div></pre></td></tr></table></figure>
-<p>More info: <a href="https://hexo.io/docs/writing.html" target="_blank" rel="external">Writing</a></p>
-<h3 id="Run-server"><a href="#Run-server" class="headerlink" title="Run server"></a>Run server</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">$ hexo server</div></pre></td></tr></table></figure>
-<p>More info: <a href="https://hexo.io/docs/server.html" target="_blank" rel="external">Server</a></p>
-<h3 id="Generate-static-files"><a href="#Generate-static-files" class="headerlink" title="Generate static files"></a>Generate static files</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">$ hexo generate</div></pre></td></tr></table></figure>
-<p>More info: <a href="https://hexo.io/docs/generating.html" target="_blank" rel="external">Generating</a></p>
-<h3 id="Deploy-to-remote-sites"><a href="#Deploy-to-remote-sites" class="headerlink" title="Deploy to remote sites"></a>Deploy to remote sites</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">$ hexo deploy</div></pre></td></tr></table></figure>
-<p>More info: <a href="https://hexo.io/docs/deployment.html" target="_blank" rel="external">Deployment</a></p>
+        <p>当我在看<a href="http://www.fourmilab.ch/bget/" title="BGET" target="_blank" rel="external">BGET</a>源码时遇到函数声明定义的问题: </p>
+<figure class="highlight c"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div></pre></td><td class="code"><pre><div class="line"><span class="comment">//bget.h</span></div><div class="line"><span class="keyword">void</span>	bectl	    _((<span class="keyword">int</span> (*compact)(bufsize sizereq, <span class="keyword">int</span> sequence),</div><div class="line">		       <span class="keyword">void</span> *(*acquire)(bufsize size),</div><div class="line">		       <span class="keyword">void</span> (*release)(<span class="keyword">void</span> *buf), bufsize pool_incr));</div><div class="line"></div><div class="line"><span class="keyword">void</span>	bpool	    _((<span class="keyword">void</span> *buffer, bufsize len));</div></pre></td></tr></table></figure>
+<figure class="highlight"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div><div class="line">11</div><div class="line">12</div><div class="line">13</div><div class="line">14</div><div class="line">15</div><div class="line">16</div></pre></td><td class="code"><pre><div class="line">//bget.c</div><div class="line">void bpool(buf, len)</div><div class="line">  void *buf;</div><div class="line">  bufsize len;</div><div class="line">&#123;</div><div class="line"></div><div class="line">&#125;</div><div class="line"></div><div class="line">void bectl(compact, acquire, release, pool_incr)</div><div class="line">  int (*compact) _((bufsize sizereq, int sequence));</div><div class="line">  void *(*acquire) _((bufsize size));</div><div class="line">  void (*release) _((void *buf));</div><div class="line">  bufsize pool_incr;</div><div class="line">&#123;</div><div class="line"></div><div class="line">&#125;</div></pre></td></tr></table></figure>
+<p>当时没有理解“<strong>_</strong>“的意思就去<a href="http://stackoverflow.com/questions/39946122/why-add-a-before-parameter-list" target="_blank" rel="external">stack overfolw</a>去提问的<strong>总结</strong>: </p>
+<p>因为没有对bget.h的头部进行产看，所以遗漏了”_”作为macro的定义： </p>
+<figure class="highlight c"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div></pre></td><td class="code"><pre><div class="line"><span class="comment">//bget.h</span></div><div class="line"><span class="meta">#<span class="meta-keyword">ifndef</span> _</span></div><div class="line"><span class="meta">#<span class="meta-keyword">ifdef</span> PROTOTYPES</span></div><div class="line"><span class="meta">#<span class="meta-keyword">define</span>  _(x)  x		      <span class="comment">/* If compiler knows prototypes */</span></span></div><div class="line"><span class="meta">#<span class="meta-keyword">else</span></span></div><div class="line"><span class="meta">#<span class="meta-keyword">define</span>  _(x)  ()                     <span class="comment">/* It it doesn't */</span></span></div><div class="line"><span class="meta">#<span class="meta-keyword">endif</span> <span class="comment">/* PROTOTYPES */</span></span></div><div class="line"><span class="meta">#<span class="meta-keyword">endif</span></span></div></pre></td></tr></table></figure>
+<p>可以看到编译时检查”<strong>PROTOTYPES</strong>“,检查编译器是否支持PROTOTYPES。在ANSI-C没有<br>出来的时候，即K&amp;R的声明和定义是下面的形式：<br><figure class="highlight c"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div></pre></td><td class="code"><pre><div class="line"><span class="comment">//declare</span></div><div class="line"><span class="function"><span class="keyword">int</span> <span class="title">bectl</span><span class="params">()</span></span>;</div><div class="line"><span class="function"><span class="keyword">int</span> <span class="title">bpool</span><span class="params">()</span></span>;</div></pre></td></tr></table></figure></p>
+<figure class="highlight c"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div><div class="line">11</div><div class="line">12</div><div class="line">13</div><div class="line">14</div><div class="line">15</div><div class="line">16</div></pre></td><td class="code"><pre><div class="line"><span class="comment">//define</span></div><div class="line"><span class="function"><span class="keyword">int</span> <span class="title">bectl</span><span class="params">(compact, acquire, release, pool_incr)</span></span></div><div class="line">    <span class="keyword">int</span> *compact;</div><div class="line">    <span class="keyword">void</span> *acquire;</div><div class="line">    <span class="keyword">void</span> *release;</div><div class="line">    bufsize pool_incr</div><div class="line">&#123;</div><div class="line"></div><div class="line">&#125;</div><div class="line"></div><div class="line"><span class="function"><span class="keyword">int</span> <span class="title">bpool</span><span class="params">(buf, len)</span></span></div><div class="line">    <span class="keyword">void</span> *buf;</div><div class="line">    bufsize len;</div><div class="line">&#123;</div><div class="line"></div><div class="line">&#125;</div></pre></td></tr></table></figure>
+<p>所以根据bget.h中的宏来控制代码的定义与声明，提高代码的可移植。大部分的编译器都是支持PROTOTYPES<br>，任然可以添加<code>-DPROTOTYPES</code>编译选项来提供额外的检查。 </p>
+<p><strong>参考</strong> </p>
+<p><a href="http://stackoverflow.com/questions/3092006/function-declaration-kr-vs-ansi" target="_blank" rel="external">Function declaration: K&amp;R vs ANSI [duplicate]</a></p>
+<p><a href="http://stackoverflow.com/questions/39946122/why-add-a-before-parameter-list" target="_blank" rel="external">Why add a “_” before parameter list</a> </p>
 
       
     </div>
     <div class="article-info article-info-index">
       
-      <a href="/2016/09/27/hello-world/" class="archive-article-date">
-  	<time datetime="2016-09-26T19:23:43.189Z" itemprop="datePublished"><i class="icon-clock"></i>2016-09-27</time>
+      <a href="/2016/10/11/pre-ANSI/" class="archive-article-date">
+  	<time datetime="2016-10-10T16:04:46.000Z" itemprop="datePublished"><i class="icon-clock"></i>2016-10-11</time>
 </a>
       
-      
+	<div class="article-tag tagcloud">
+		<i class="icon-price-tags"></i>
+		<ul class="article-tag-list"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/C-GCC-PROTOTYPES/">C GCC PROTOTYPES</a></li></ul>
+	</div>
 
-      <div class="clearfix"></div>
-    </div>
-  </div>
-</article>
-
-
-
-
-
-
-
-
-
-
-  
-    <article id="post-test" class="article article-type-post" itemscope itemprop="blogPost">
-  <div class="article-inner">
-    
-      <input type="hidden" class="isFancy" />
-    
-    
-      <header class="article-header">
-        
-  
-    <h1 itemprop="name">
-      <a class="article-title" href="/2016/09/26/test/">test</a>
-    </h1>
-  
-
-      </header>
-    
-    <div class="article-entry" itemprop="articleBody">
-      
-        
-      
-    </div>
-    <div class="article-info article-info-index">
-      
-      <a href="/2016/09/26/test/" class="archive-article-date">
-  	<time datetime="2016-09-26T14:04:07.000Z" itemprop="datePublished"><i class="icon-clock"></i>2016-09-26</time>
-</a>
-      
       
 
       <div class="clearfix"></div>
@@ -352,7 +272,7 @@ MathJax.Hub.Queue(function() {
     
     	<section class="tools-section tools-section-tag">
     			<div class="widget tagcloud" id="js-tagcloud">
-    				
+    				<a href="/tags/C-GCC-PROTOTYPES/" style="font-size: 10px;">C GCC PROTOTYPES</a>
     			</div>
     	</section>
     

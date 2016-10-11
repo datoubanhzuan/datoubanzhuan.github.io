@@ -4,108 +4,21 @@
   <meta charset="utf-8">
   
   <meta http-equiv="X-UA-Compatible" content="IE=edge" >
-  <title>test | 大头板砖的博客</title>
+  <title>PROTOTYPES and pre-ANSI | 大头板砖的博客</title>
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
-  <meta name="description" content="bold 
-* *
-strong
-* *
-
-
-
-Tables
-Are
-cool
-
-
-
-
-col 3 is
-right-aligned
-$1600
-
-
-col 2 is
-centerl-aligned
-$800
-
-
-col 1 is
-left-aligned
-$200
-
-
-
-$$E=mc^2$$">
-<meta property="og:type" content="website">
-<meta property="og:title" content="test">
-<meta property="og:url" content="https://datoubanzhuan.github.io/test/index.html">
+  <meta name="description" content="当我在看BGET源码时遇到函数声明定义的问题: 
+123456//bget.hvoid	bectl	    _((int (*compact)(bufsize sizereq, int sequence),		       void *(*acquire)(bufsize size),		       void (*release)(void *buf), bufsize pool_incr));">
+<meta property="og:type" content="article">
+<meta property="og:title" content="PROTOTYPES and pre-ANSI">
+<meta property="og:url" content="https://datoubanzhuan.github.io/2016/10/11/pre-ANSI/index.html">
 <meta property="og:site_name" content="大头板砖的博客">
-<meta property="og:description" content="bold 
-* *
-strong
-* *
-
-
-
-Tables
-Are
-cool
-
-
-
-
-col 3 is
-right-aligned
-$1600
-
-
-col 2 is
-centerl-aligned
-$800
-
-
-col 1 is
-left-aligned
-$200
-
-
-
-$$E=mc^2$$">
-<meta property="og:updated_time" content="2016-09-28T17:15:10.549Z">
+<meta property="og:description" content="当我在看BGET源码时遇到函数声明定义的问题: 
+123456//bget.hvoid	bectl	    _((int (*compact)(bufsize sizereq, int sequence),		       void *(*acquire)(bufsize size),		       void (*release)(void *buf), bufsize pool_incr));">
+<meta property="og:updated_time" content="2016-10-11T16:49:00.599Z">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="test">
-<meta name="twitter:description" content="bold 
-* *
-strong
-* *
-
-
-
-Tables
-Are
-cool
-
-
-
-
-col 3 is
-right-aligned
-$1600
-
-
-col 2 is
-centerl-aligned
-$800
-
-
-col 1 is
-left-aligned
-$200
-
-
-
-$$E=mc^2$$">
+<meta name="twitter:title" content="PROTOTYPES and pre-ANSI">
+<meta name="twitter:description" content="当我在看BGET源码时遇到函数声明定义的问题: 
+123456//bget.hvoid	bectl	    _((int (*compact)(bufsize sizereq, int sequence),		       void *(*acquire)(bufsize size),		       void (*release)(void *buf), bufsize pool_incr));">
   
     <link rel="alternative" href="/atom.xml" title="大头板砖的博客" type="application/atom+xml">
   
@@ -218,7 +131,7 @@ $$E=mc^2$$">
 </nav>
 
       <div class="body-wrap">
-        <article id="page-undefined" class="article article-type-page" itemscope itemprop="blogPost">
+        <article id="C-pre-ANSI" class="article article-type-C" itemscope itemprop="blogPost">
   <div class="article-inner">
     
       <input type="hidden" class="isFancy" />
@@ -228,7 +141,7 @@ $$E=mc^2$$">
         
   
     <h1 class="article-title" itemprop="name">
-      test
+      PROTOTYPES and pre-ANSI
     </h1>
   
 
@@ -236,46 +149,32 @@ $$E=mc^2$$">
     
     <div class="article-entry" itemprop="articleBody">
       
-        <p><em>bold</em> </p>
-<p>* *</p>
-<p><strong>strong</strong></p>
-<p>*<em> *</em></p>
-<table>
-<thead>
-<tr>
-<th style="text-align:right">Tables</th>
-<th style="text-align:center">Are</th>
-<th style="text-align:right">cool</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td style="text-align:right">col 3 is</td>
-<td style="text-align:center">right-aligned</td>
-<td style="text-align:right">$1600</td>
-</tr>
-<tr>
-<td style="text-align:right">col 2 is</td>
-<td style="text-align:center">centerl-aligned</td>
-<td style="text-align:right">$800</td>
-</tr>
-<tr>
-<td style="text-align:right">col 1 is</td>
-<td style="text-align:center">left-aligned</td>
-<td style="text-align:right">$200</td>
-</tr>
-</tbody>
-</table>
-<p>$$E=mc^2$$</p>
+        <p>当我在看<a href="http://www.fourmilab.ch/bget/" title="BGET" target="_blank" rel="external">BGET</a>源码时遇到函数声明定义的问题: </p>
+<figure class="highlight c"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div></pre></td><td class="code"><pre><div class="line"><span class="comment">//bget.h</span></div><div class="line"><span class="keyword">void</span>	bectl	    _((<span class="keyword">int</span> (*compact)(bufsize sizereq, <span class="keyword">int</span> sequence),</div><div class="line">		       <span class="keyword">void</span> *(*acquire)(bufsize size),</div><div class="line">		       <span class="keyword">void</span> (*release)(<span class="keyword">void</span> *buf), bufsize pool_incr));</div><div class="line"></div><div class="line"><span class="keyword">void</span>	bpool	    _((<span class="keyword">void</span> *buffer, bufsize len));</div></pre></td></tr></table></figure>
+<figure class="highlight"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div><div class="line">11</div><div class="line">12</div><div class="line">13</div><div class="line">14</div><div class="line">15</div><div class="line">16</div></pre></td><td class="code"><pre><div class="line">//bget.c</div><div class="line">void bpool(buf, len)</div><div class="line">  void *buf;</div><div class="line">  bufsize len;</div><div class="line">&#123;</div><div class="line"></div><div class="line">&#125;</div><div class="line"></div><div class="line">void bectl(compact, acquire, release, pool_incr)</div><div class="line">  int (*compact) _((bufsize sizereq, int sequence));</div><div class="line">  void *(*acquire) _((bufsize size));</div><div class="line">  void (*release) _((void *buf));</div><div class="line">  bufsize pool_incr;</div><div class="line">&#123;</div><div class="line"></div><div class="line">&#125;</div></pre></td></tr></table></figure>
+<p>当时没有理解“<strong>_</strong>“的意思就去<a href="http://stackoverflow.com/questions/39946122/why-add-a-before-parameter-list" target="_blank" rel="external">stack overfolw</a>去提问的<strong>总结</strong>: </p>
+<p>因为没有对bget.h的头部进行产看，所以遗漏了”_”作为macro的定义： </p>
+<figure class="highlight c"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div></pre></td><td class="code"><pre><div class="line"><span class="comment">//bget.h</span></div><div class="line"><span class="meta">#<span class="meta-keyword">ifndef</span> _</span></div><div class="line"><span class="meta">#<span class="meta-keyword">ifdef</span> PROTOTYPES</span></div><div class="line"><span class="meta">#<span class="meta-keyword">define</span>  _(x)  x		      <span class="comment">/* If compiler knows prototypes */</span></span></div><div class="line"><span class="meta">#<span class="meta-keyword">else</span></span></div><div class="line"><span class="meta">#<span class="meta-keyword">define</span>  _(x)  ()                     <span class="comment">/* It it doesn't */</span></span></div><div class="line"><span class="meta">#<span class="meta-keyword">endif</span> <span class="comment">/* PROTOTYPES */</span></span></div><div class="line"><span class="meta">#<span class="meta-keyword">endif</span></span></div></pre></td></tr></table></figure>
+<p>可以看到编译时检查”<strong>PROTOTYPES</strong>“,检查编译器是否支持PROTOTYPES。在ANSI-C没有<br>出来的时候，即K&amp;R的声明和定义是下面的形式：<br><figure class="highlight c"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div></pre></td><td class="code"><pre><div class="line"><span class="comment">//declare</span></div><div class="line"><span class="function"><span class="keyword">int</span> <span class="title">bectl</span><span class="params">()</span></span>;</div><div class="line"><span class="function"><span class="keyword">int</span> <span class="title">bpool</span><span class="params">()</span></span>;</div></pre></td></tr></table></figure></p>
+<figure class="highlight c"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div><div class="line">11</div><div class="line">12</div><div class="line">13</div><div class="line">14</div><div class="line">15</div><div class="line">16</div></pre></td><td class="code"><pre><div class="line"><span class="comment">//define</span></div><div class="line"><span class="function"><span class="keyword">int</span> <span class="title">bectl</span><span class="params">(compact, acquire, release, pool_incr)</span></span></div><div class="line">    <span class="keyword">int</span> *compact;</div><div class="line">    <span class="keyword">void</span> *acquire;</div><div class="line">    <span class="keyword">void</span> *release;</div><div class="line">    bufsize pool_incr</div><div class="line">&#123;</div><div class="line"></div><div class="line">&#125;</div><div class="line"></div><div class="line"><span class="function"><span class="keyword">int</span> <span class="title">bpool</span><span class="params">(buf, len)</span></span></div><div class="line">    <span class="keyword">void</span> *buf;</div><div class="line">    bufsize len;</div><div class="line">&#123;</div><div class="line"></div><div class="line">&#125;</div></pre></td></tr></table></figure>
+<p>所以根据bget.h中的宏来控制代码的定义与声明，提高代码的可移植。大部分的编译器都是支持PROTOTYPES<br>，任然可以添加<code>-DPROTOTYPES</code>编译选项来提供额外的检查。 </p>
+<p><strong>参考</strong> </p>
+<p><a href="http://stackoverflow.com/questions/3092006/function-declaration-kr-vs-ansi" target="_blank" rel="external">Function declaration: K&amp;R vs ANSI [duplicate]</a></p>
+<p><a href="http://stackoverflow.com/questions/39946122/why-add-a-before-parameter-list" target="_blank" rel="external">Why add a “_” before parameter list</a> </p>
 
       
     </div>
     <div class="article-info article-info-index">
       
-      <a href="/test/index.html" class="archive-article-date">
-  	<time datetime="2016-09-28T16:01:35.000Z" itemprop="datePublished"><i class="icon-clock"></i>2016-09-29</time>
+      <a href="/2016/10/11/pre-ANSI/" class="archive-article-date">
+  	<time datetime="2016-10-10T16:04:46.000Z" itemprop="datePublished"><i class="icon-clock"></i>2016-10-11</time>
 </a>
       
+	<div class="article-tag tagcloud">
+		<i class="icon-price-tags"></i>
+		<ul class="article-tag-list"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/C-GCC-PROTOTYPES/">C GCC PROTOTYPES</a></li></ul>
+	</div>
+
       
 
       <div class="clearfix"></div>
@@ -312,7 +211,7 @@ $$E=mc^2$$">
 
 <div class="duoshuo">
 	<!-- 多说评论框 start -->
-	<div class="ds-thread" data-thread-key="undefined" data-title="test" data-url="https://datoubanzhuan.github.io/test/index.html"></div>
+	<div class="ds-thread" data-thread-key="pre-ANSI" data-title="PROTOTYPES and pre-ANSI" data-url="https://datoubanzhuan.github.io/2016/10/11/pre-ANSI/"></div>
 	<!-- 多说评论框 end -->
 	<!-- 多说公共JS代码 start (一个网页只需插入一次) -->
 	<script type="text/javascript">
@@ -356,7 +255,7 @@ $$E=mc^2$$">
 		mathjax: true,
 		animate: true,
 		isHome: false,
-		isPost: false,
+		isPost: true,
 		isArchive: false,
 		isTag: false,
 		isCategory: false,
